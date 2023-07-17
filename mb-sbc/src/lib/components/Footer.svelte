@@ -74,8 +74,7 @@
 							/>
 						</svg>
 						</a>
-					</div>
-					
+					</div>					
 					<div class="ig cursor-pointer hover:scale-95 transition-all duration-200">
 						<a href="https://www.instagram.com/maplebearsbc/" title="@maplebearsbc" target="_new">
 						<svg
