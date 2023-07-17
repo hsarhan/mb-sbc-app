@@ -91,10 +91,10 @@
 							name="grade"
 							aria-label="grade"
 							class="input text-sm" >
-							<option value="Educação Infantil">Educação Infantil</option>
-							<option value="Ensino Fundamental I">Ensino Fundamental I</option>
-							<option value="Ensino Fundamental II">Ensino Fundamental II</option>
-							<option value="Ensino Médio">Ensino Médio</option>
+							<option value="Educação Infantil">Educação Infantil • Preschool</option>
+							<option value="Ensino Fundamental I">Ensino Fundamental I • Elementary</option>
+							<option value="Ensino Fundamental II">Ensino Fundamental II • Middle Years</option>
+							<option value="Ensino Médio">Ensino Médio • High School</option>
 						</select>
 							
 					</div>

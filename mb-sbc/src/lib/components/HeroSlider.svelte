@@ -15,7 +15,7 @@
 	export let nav = false;
 	export let pag = false;
 
-	export let box = false;
+	export let box = true;
 
 	export let progress = false;
 	export let pColor = 'bg-primary-500/50';
@@ -53,25 +53,23 @@
 		bind:this={slider}
 		on:move={uSlide}
 	>
-		<div class="{pbgColor}">
+		<div class="relative {pbgColor}">
 			<SplideTrack>
 				{#each images as { imgurl, name, attribution }}
 					<SplideSlide>
 						<div
-							class={`hero-img grid aspect-square bg-no-repeat bg-slate-100 bg-right-bottom`}
+							class={`hero-img aspect-square bg-no-repeat bg-slate-100 bg-right-bottom`}
 							style="background-image: url({imgurl});"
 						>
-							{#if box}
-								<div class="z-50 grid p-6 transition-all duration-200 items-end text-white">
-									<div class="min-h-12 max-w-[80vw] pb-4">
-										<p class="w-fit max-w-fit text-5xl font-bold break-words pb-4">{name}</p>
-										<p class="w-fit md:max-w-md break-words">
-											{@html attribution}
-										</p>
-									</div>
-								</div>
-							{/if}
 						</div>
+						{#if box}
+							<div class="absolute w-full left-0 bottom-0 p-8 lg:p-12 text-white">
+								<div class="text-5xl lg:text-6xl font-bold break-words w-fit max-w-[13ch] pb-4 leading-12">
+									{@html name}
+								</div>
+								<p class="text-lg lg:text-xl break-words w-fit max-w-[28ch] leading-5">{@html attribution}</p>
+							</div>
+						{/if}
 					</SplideSlide>
 				{/each}
 			</SplideTrack>
@@ -106,7 +104,7 @@
 		top: 0;
 		left: 0;
 		background: rgb(2, 0, 36);
-		background: linear-gradient(180deg, rgba(255, 0, 36, 0) 45%, rgba(255, 0, 20, 1) 99%);
+		background: linear-gradient(180deg, rgba(255, 0, 0, 0) 45%, rgba(99, 19, 19, 1) 99%);
 		opacity: 0.85;
 	}
 </style>
