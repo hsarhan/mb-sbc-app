@@ -27,6 +27,9 @@ module.exports = {
 					800: '#CC4522',
 					900: '#A5371B'
 				}
+			},
+			animation: {
+				ping: 'ping 1s ease-in-out reverse'
 			}
 		}
 	},

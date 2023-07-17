@@ -11,8 +11,8 @@
 			<img src="mb-sbc-flags.png" alt="Admisson" class="w-32 h-auto lg:w-40">
 		</div>
 		<div class="grid gap-1 absolute top-0 right-0 lg:-right-12 2xl:-right-16 z-50">
-			<img src="mb-sbc-admission.png" alt="Admisson" class="w-24 h-24 2xl:w-32 2xl:h-32">
-			<img src="mb-sbc-certify.png" alt="Admisson" class="w-24 h-24 2xl:w-32 2xl:h-32 mx-auto">
+			<img src="mb-sbc-admission.png" alt="Admisson" class="animate-ping w-24 h-24 2xl:w-32 2xl:h-32">
+			<img src="mb-sbc-certify.png" alt="Certificates" class="animate-ping w-24 h-24 2xl:w-32 2xl:h-32 mx-auto">
 		</div>
 		<HeroSlider />
 	</div>
