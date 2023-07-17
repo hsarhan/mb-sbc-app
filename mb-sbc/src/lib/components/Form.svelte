@@ -28,9 +28,9 @@
 	};
 
 </script>
-<div class="grid gap-4 lg:gap-12 content-between lg:content-center md:content-start bg-surface-100 dark:bg-primary-700 p-8 lg:px-12 xl:px-16">
+<div class="grid gap-4 lg:gap-12 content-between lg:content-center md:content-start bg-surface-100 dark:bg-primary-700 p-8 lg:px-12 xl:px-16 aspect-square">
     <h2
-        class="text-gray-500 dark:text-surface-50 font-light text-2xl md:text-3xl xl:text-4xl mb-4 max-w-[35ch] lg:max-w-[20ch] xl:max-w-full"
+        class="text-gray-500 dark:text-surface-50 font-light text-3xl lg:text-4xl 2xl:text-6xl mb-4 max-w-[75vw] md:max-w-full lg:max-w-[25ch] xl:max-w-full"
     >
         Conheça e se apaixone pelo nosso espaço e nossa metodologia
     </h2>

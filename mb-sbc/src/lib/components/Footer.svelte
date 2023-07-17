@@ -81,4 +81,8 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="grid grid-flow-col gap-2 mt-8 lg:mt-0 md:justify-center">
+				<p class="self-center text-xs">Rua Dom Paulo Mariano, 393 - Nova Petrópolis<br/>CEP 09770-320 - São Bernardo do Campo, SP</p>
+			</div>
 		</div>

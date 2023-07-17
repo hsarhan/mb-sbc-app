@@ -24,7 +24,6 @@
 
 	const mainOptions = {
 		autoplay: true,
-		lazyLoad: 'nearby',
 		interval: duration,
 		type: 'loop',
 		perPage: sNum,
