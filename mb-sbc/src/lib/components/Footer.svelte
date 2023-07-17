@@ -1,14 +1,15 @@
 <div
-			class="container mx-auto bg-primary-700 dark:bg-primary-900 text-surface-50 p-12 text-center"
+			class="container mx-auto bg-primary-700 dark:bg-primary-900 text-surface-50 pt-12 pb-6 px-8 lg:px-16 text-center"
 		>
 			<div class="grid md:grid-flow-col grid-cols-1 md:grid-cols-2 gap-0">
-				<div class="grid grid-flow-col gap-2 mt-6 lg:mt-0 md:justify-start">
-					<p class="self-center"><span class="font-semibold">Maple Bear</span> - São Bernardo do Campo</p>
+				<div class="grid grid-flow-col gap-2 justify-center md:justify-start">
+					<!-- <p class="self-center"><span class="font-semibold">Maple Bear</span> - São Bernardo do Campo</p> -->
+					<img src="mb-sbc-tagline.png" alt="Maple Bear - SBC" class="w-48 py-4">
 				</div>
 
 				<!-- Social -->
 				<div
-					class="grid grid-flow-col gap-2 justify-center md:justify-end mt-6 lg:mt-0"
+					class="grid grid-flow-col gap-2 content-center justify-center md:justify-end mt-6 lg:mt-0"
 				>
 					<div class="email cursor-pointer">
 						<svg
@@ -82,7 +83,10 @@
 				</div>
 			</div>
 
-			<div class="grid grid-flow-col gap-2 mt-8 lg:mt-0 md:justify-center">
-				<p class="self-center text-xs">Rua Dom Paulo Mariano, 393 - Nova Petrópolis<br/>CEP 09770-320 - São Bernardo do Campo, SP</p>
+			<div class="grid grid-flow-col gap-2 mt-8 lg:mt-12 md:justify-center">
+				<div>
+					<h4 class="mb-2 font-semibold uppercase">Unidade São Bernardo do Campo, SP</h4>
+					<p class="self-center text-xs max-w-[38ch] md:max-w-full break-words mx-auto">Rua Dom Paulo Mariano, 393 - Nova Petrópolis <span class="hidden md:inline">•</span> CEP 09770-320 - São Bernardo do Campo, SP</p>
+				</div>
 			</div>
 		</div>
