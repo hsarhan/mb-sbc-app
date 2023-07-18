@@ -4,7 +4,9 @@
 			<div class="grid md:grid-flow-col grid-cols-1 md:grid-cols-2 gap-0 pt-12 px-8 lg:px-16">
 				<div class="grid grid-flow-col gap-2 justify-center md:justify-start">
 					<!-- <p class="self-center"><span class="font-semibold">Maple Bear</span> - São Bernardo do Campo</p> -->
-					<img src="mb-sbc-tagline.png" alt="Maple Bear - SBC" class="w-48 py-4">
+					<a href="https://saobernardo.maplebear.com.br" title="Maple Bear - SBC" target="_new">
+						<img src="mb-sbc-tagline.png" alt="Maple Bear - SBC" class="w-48 py-4">
+					</a>
 				</div>
 
 				<!-- Social -->
@@ -100,8 +102,10 @@
 
 			<div class="grid grid-flow-col gap-2 mt-8 lg:mt-12 md:justify-center bg-primary-900 w-full py-4 px-8 lg:px-16">
 				<div>
-					<h4 class="mb-2 font-semibold uppercase">Unidade São Bernardo do Campo, SP</h4>
-					<p class="self-center text-xs max-w-[38ch] md:max-w-full break-words mx-auto">Rua Dom Paulo Mariano, 393 - Nova Petrópolis <span class="hidden md:inline">•</span> CEP 09770-320 - São Bernardo do Campo, SP</p>
+					<a href="https://goo.gl/maps/iwgn9t9wgB2V7rSt9" title="Maple Bear - SBC" target="_new">
+						<h4 class="mb-2 font-semibold uppercase">Unidade São Bernardo do Campo, SP</h4>
+						<p class="self-center text-xs max-w-[38ch] md:max-w-full break-words mx-auto">Rua Dom Paulo Mariano, 393 - Nova Petrópolis <span class="hidden md:inline">•</span> CEP 09770-320 - São Bernardo do Campo, SP</p>
+					</a>
 				</div>
 			</div>
 		</div>
