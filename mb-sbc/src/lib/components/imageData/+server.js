@@ -1,7 +1,7 @@
 export const entries = [
 	{
 		id: 0,
-		name: 'High School',
+		name: 'Maple Bear<br/>High School',
 		imgurl: 'mb-sbc-00.jpg',
 		attribution: 'Ensino bilíngue e duplo diploma. Aprendizado para toda a vida.'
 	},
