@@ -124,8 +124,8 @@
 					</div>
 
 					<div class="pt-3 md:pt-0 grid gap-2">
-						<button type="submit" on:click={() => (submitted = true)} class="mt-6 btn rounded-md text-white bg-primary-400 dark:bg-primary-500"
-							>Enviar <span class="text-slate-100 ml-1"> • Send</span></button
+						<button type="submit" on:click={() => (submitted = true)} class="mt-6 btn rounded-md font-semibold text-white bg-primary-400 dark:bg-primary-500"
+							>Enviar <span class="text-slate-100 font-normal ml-1"> • Send</span></button
 						>
 					</div>
 				</form>
