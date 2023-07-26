@@ -13,6 +13,13 @@
 		ga.addEvent('form_success', {
 			lead: 'captured'
 		});
+
+		gtag('event', 'form_submit', {
+			event_category: 'Forms',
+			event_action: 'Submit',
+			event_label: 'Admission Form'
+		});
+
 	};
 
 	const submitForm = async (data) => {
@@ -67,7 +74,7 @@
 			{:else if submitStatus == 'success'}
 				<p>Dados enviados com sucesso! Obrigado.</p>
 			{:else}
-				<form on:submit|preventDefault={submitForm} class="grid gap-4 md:grid-cols-2 dark:text-surface-50">
+				<form on:submit|preventDefault={submitForm} class="grid gap-4 md:grid-cols-2 dark:text-surface-50" id="admission">
 					<div class="grid gap-2">
 						<label for="name" class="text-xs">Seu Nome <span class="text-slate-400 dark:text-slate-300">• Your name</span></label>
 						<input
