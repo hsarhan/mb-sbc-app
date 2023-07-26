@@ -2,10 +2,10 @@
 	import Footer from "$lib/components/Footer.svelte";
 	import Form from "$lib/components/Form.svelte";
 	import HeroSlider from "$lib/components/HeroSlider.svelte";
-	import { GoogleAnalytics, ga } from '@beyonk/svelte-google-analytics'
+	import { GoogleAnalytics } from '@beyonk/svelte-google-analytics'
 
-	let mID = 'G-KGHJT8ZS6J';
-	
+	export let mID = 'G-KGHJT8ZS6J';
+
 </script>
 
 <GoogleAnalytics properties={[ {mID} ]} />
