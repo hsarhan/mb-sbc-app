@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from '$app/stores'
 
-  let mID = 'G-KGHJT8ZS6J';
-  //GTM-WS9QRR4
+  export let mID = '';
+  //G-KGHJT8ZS6J, ...GTM-WS9QRR4
 
   $: {
     if (typeof gtag !== 'undefined') {

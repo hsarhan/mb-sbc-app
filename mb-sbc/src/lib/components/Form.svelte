@@ -1,5 +1,6 @@
 <script>
 	import { fly, fade } from 'svelte/transition';
+	import { ga } from '@beyonk/svelte-google-analytics'
 
 	let submitStatus = "";
 	let hasError = false;
@@ -7,6 +8,12 @@
 	let submitted = false;
 
 	const errMessage = 'Erro! Verifique os campos.';
+
+	const formSuccess = () => {
+		ga.addEvent('form_success', {
+		lead: 'captured'
+		})
+	}
 
 	const submitForm = async (data) => {
 		submitStatus = 'submitting';
@@ -23,6 +30,7 @@
 		submitStatus = message;
 
 		setTimeout(function () {
+			formSuccess();
 			isSuccessVisible = false;
 		}, 4500);
 	};
