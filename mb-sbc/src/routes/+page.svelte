@@ -2,12 +2,13 @@
 	import Footer from "$lib/components/Footer.svelte";
 	import Form from "$lib/components/Form.svelte";
 	import HeroSlider from "$lib/components/HeroSlider.svelte";
-	import { GoogleAnalytics } from '@beyonk/svelte-google-analytics'
+	import { GoogleAnalytics, ga } from '@beyonk/svelte-google-analytics'
 
 	let mID = 'G-KGHJT8ZS6J';
+
 </script>
 
-<GoogleAnalytics properties={[ {mID} ]} />
+<GoogleAnalytics bind:this={ga} properties={[ {mID} ]} />
 
 <div class="container grid grid-flow-row lg:grid-flow-col lg:grid-cols-2 gap-0 lg:mt-[5vh] mx-auto bg-surface-50 overflow-hidden">
 	<div class="relative">

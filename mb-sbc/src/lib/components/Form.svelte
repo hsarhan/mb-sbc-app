@@ -11,9 +11,20 @@
 
 	const formSuccess = () => {
 		ga.addEvent('form_success', {
-		lead: 'captured'
-		})
-	}
+			lead: 'captured'
+		});
+
+		gtag("event", "generate_lead", {
+			currency: "BRL",
+			value: 50
+		});
+
+		gtag("event", "sign_up", {
+			method: "SimpleAds Form"
+		});
+
+
+	};
 
 	const submitForm = async (data) => {
 		submitStatus = 'submitting';
