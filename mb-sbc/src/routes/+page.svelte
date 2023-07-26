@@ -5,10 +5,10 @@
 	import { GoogleAnalytics, ga } from '@beyonk/svelte-google-analytics'
 
 	let mID = 'G-KGHJT8ZS6J';
-
+	
 </script>
 
-<GoogleAnalytics bind:this={ga} properties={[ {mID} ]} />
+<GoogleAnalytics properties={[ {mID} ]} />
 
 <div class="container grid grid-flow-row lg:grid-flow-col lg:grid-cols-2 gap-0 lg:mt-[5vh] mx-auto bg-surface-50 overflow-hidden">
 	<div class="relative">
