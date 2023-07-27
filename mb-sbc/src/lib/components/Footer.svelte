@@ -5,7 +5,7 @@
 				<div class="grid grid-flow-col gap-2 justify-center md:justify-start">
 					<!-- <p class="self-center"><span class="font-semibold">Maple Bear</span> - São Bernardo do Campo</p> -->
 					<a href="https://saobernardo.maplebear.com.br" title="Maple Bear - SBC" target="_new">
-						<img src="mb-sbc-tagline.png" alt="Maple Bear - SBC" class="w-48 py-4">
+						<img src="mb-sbc-tagline.png" alt="Maple Bear - SBC" width="192" height="86" class="w-48 py-4">
 					</a>
 				</div>
 
