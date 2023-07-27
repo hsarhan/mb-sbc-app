@@ -19,9 +19,9 @@ export const entries = [
 	},
 	{
 		id: 3,
-		name: 'Maple Bear Experience Day',
+		name: 'Maple Bear Experience',
 		imgurl: 'mb-sbc-03-min.webp',
-		attribution: 'Venha passar um dia conosco<br/>e faça parte desta experiência'
+		attribution: 'Venha viver a experiência que irá mudar a vida dos seus filhos!'
 	},
 	{
 		id: 4,
