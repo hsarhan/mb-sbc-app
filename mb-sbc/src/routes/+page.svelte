@@ -11,7 +11,7 @@
 	<meta property="og:image" content="/favicon.png" />
 	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content=/favicon.png" />
+	<meta name="twitter:image" content="/favicon.png" />
 	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 </svelte:head>
 
