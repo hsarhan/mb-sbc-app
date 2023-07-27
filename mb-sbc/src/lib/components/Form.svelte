@@ -1,23 +1,20 @@
 <script>
 	import { fly, fade } from 'svelte/transition';
 	import { ga } from '@beyonk/svelte-google-analytics'
+	import Thanks from './Thanks.svelte';
 
 	let submitStatus = "";
 	let hasError = false;
 	let isSuccessVisible = false;
 	let submitted = false;
 
+	let tks = false;
+
 	const errMessage = 'Erro! Verifique os campos.';
 
 	const formSuccess = () => {
 		ga.addEvent('form_success', {
 			lead: 'captured'
-		});
-
-		gtag('event', 'form_submit', {
-			event_category: 'Forms',
-			event_action: 'Submit',
-			event_label: 'Admission Form'
 		});
 
 	};
@@ -40,11 +37,20 @@
 			formSuccess();
 			isSuccessVisible = false;
 		}, 4500);
+
+		setTimeout(function () {
+			tks = true;
+		}, 5750);
 	};
 
 </script>
 <div class="grid gap-4 lg:gap-12 content-between lg:content-center md:content-start bg-surface-100 dark:bg-primary-700 p-8 lg:px-12 xl:px-16 aspect-square md:aspect-auto lg:aspect-square">
-    <h2
+    {#if tks}
+		<div in:fade={{ duration: 500}} out:fade={{ duration: 450, delay: 500 }}>
+			<Thanks />
+		</div>
+	{:else}
+	<h2
         class="text-gray-500 dark:text-surface-50 font-light text-3xl lg:text-4xl 2xl:text-6xl mb-4 max-w-[75vw] md:max-w-full lg:max-w-[25ch] xl:max-w-full"
     >
         Conheça e se apaixone pelo nosso espaço e nossa metodologia
@@ -147,4 +153,5 @@
 			{/if}
         </div>
     </div>
+	{/if}
 </div>
