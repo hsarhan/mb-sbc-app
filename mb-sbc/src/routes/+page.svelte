@@ -5,14 +5,24 @@
 
 </script>
 
+<svelte:head>
+	<meta name="description" content="Maple Bear São Bernardo do Campo - Matrículas abertas!" />
+	<!-- Facebook Meta Tags -->
+	<meta property="og:image" content="/favicon.png" />
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content=/favicon.png" />
+	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+</svelte:head>
+
 <div class="container grid grid-flow-row lg:grid-flow-col lg:grid-cols-2 gap-0 lg:mt-[5vh] mx-auto bg-surface-50 overflow-hidden">
 	<div class="relative">
 		<div class="grid gap-1 absolute top-3 left-3 z-40">
-			<img src="mb-sbc-flags.png" alt="Admisson" class="w-32 h-auto lg:w-40">
+			<img src="mb-sbc-flags.png" alt="Admisson" width="128" height="22" class="w-32 h-auto lg:w-40">
 		</div>
 		<div class="grid gap-1 absolute top-0 right-0 lg:-right-12 2xl:-right-16 z-50">
-			<img src="mb-sbc-admission.png" alt="Admisson" class="animate-ping w-24 h-24 2xl:w-32 2xl:h-32">
-			<img src="mb-sbc-certify.png" alt="Certificates" class="animate-ping w-24 h-24 2xl:w-32 2xl:h-32 mx-auto">
+			<img src="mb-sbc-admission.png" alt="Admisson" width="96" height="96" class="animate-ping w-24 h-24 2xl:w-32 2xl:h-32">
+			<img src="mb-sbc-certify.png" alt="Certificates" width="96" height="96" class="animate-ping w-24 h-24 2xl:w-32 2xl:h-32 mx-auto">
 		</div>
 		<HeroSlider />
 	</div>

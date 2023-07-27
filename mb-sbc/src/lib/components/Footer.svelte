@@ -103,7 +103,7 @@
 			<div class="grid grid-flow-col gap-2 mt-8 lg:mt-12 md:justify-center bg-primary-900 w-full py-4 px-8 lg:px-16">
 				<div>
 					<a href="https://goo.gl/maps/iwgn9t9wgB2V7rSt9" title="Maple Bear - SBC" target="_new">
-						<h4 class="mb-2 font-semibold uppercase">Unidade São Bernardo do Campo, SP</h4>
+						<p class="mb-2 font-semibold uppercase">Unidade São Bernardo do Campo, SP</p>
 						<p class="self-center text-xs max-w-[38ch] md:max-w-full break-words mx-auto">Rua Dom Paulo Mariano, 393 - Nova Petrópolis <span class="hidden md:inline">•</span> CEP 09770-320 - São Bernardo do Campo, SP</p>
 					</a>
 				</div>
