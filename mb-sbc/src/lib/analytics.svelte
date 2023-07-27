@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores'
 
-  export let mID = 'G-KGHJT8ZS6J';
+  let mID = 'G-KGHJT8ZS6J';
   //G-KGHJT8ZS6J, ...GTM-WS9QRR4
 
   $: {
