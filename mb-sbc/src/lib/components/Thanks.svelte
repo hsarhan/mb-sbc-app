@@ -5,5 +5,5 @@
        Thanks eh!
     </h2>
     <p class="text-xl xl:text-2xl text-primary-600 dark:text-surface-50 max-w-[30ch]">A <span class="font-semibold">Maple Bear São Bernardo do Campo</span> agradece o seu registro de interesse.</p>
-    <p class="text-surface-800 dark:text-surface-50 max-w-[40ch]">Agora, a nossa equipe irá entrar em contato para agendar a sua visita. Até já!</p>
+    <p class="text-surface-800 dark:text-surface-50 max-w-[40ch]">Agora é só aguardar, a nossa equipe irá entrar em contato para agendar a sua visita. Até já!</p>
 </div>

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores'
+  import { GoogleAnalytics } from '@beyonk/svelte-google-analytics'
 
   let mID = 'G-KGHJT8ZS6J';
   //G-KGHJT8ZS6J, ...GTM-WS9QRR4
@@ -30,3 +31,5 @@
     gtag('config', {mID})
   </script>
 </svelte:head>
+
+<GoogleAnalytics properties={[ mID ]} />
