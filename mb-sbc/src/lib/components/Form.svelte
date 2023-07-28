@@ -6,6 +6,7 @@
 	let submitStatus = "";
 	let hasError = false;
 	let isSuccessVisible = false;
+	let isFormVisible = true;
 	let submitted = false;
 
 	let tks = false;
@@ -33,14 +34,16 @@
 		const { message } = await res.json();
 		submitStatus = message;
 
+		isFormVisible = false;
+
 		setTimeout(function () {
 			formSuccess();
 			isSuccessVisible = false;
-		}, 4500);
+		}, 2500);
 
 		setTimeout(function () {
 			tks = true;
-		}, 5750);
+		}, 3750);
 	};
 
 </script>
@@ -78,78 +81,80 @@
 			{:else if submitStatus == 'failed'}
 				<p>Erro! Dados não enviados</p>
 			{:else if submitStatus == 'success'}
-				<p>Dados enviados com sucesso! Obrigado.</p>
+				<p>Dados enviados com sucesso. Obrigado!</p>
 			{:else}
-				<form on:submit|preventDefault={submitForm} class="grid gap-4 md:grid-cols-2 dark:text-surface-50" id="admission">
-					<div class="grid gap-2">
-						<label for="name" class="text-xs">Seu Nome <span class="text-slate-400 dark:text-slate-300">• Your name</span></label>
-						<input
-							type="text"
-							name="name"
-							aria-label="name"
-							placeholder="Seu Nome"
-							class="input text-sm"
-							required
-						/>
-					</div>
+				{#if isFormVisible}
+					<form transition:fade on:submit|preventDefault={submitForm} class="grid gap-4 md:grid-cols-2 dark:text-surface-50" id="admission">
+						<div class="grid gap-2">
+							<label for="name" class="text-xs">Seu Nome <span class="text-slate-400 dark:text-slate-300">• Your name</span></label>
+							<input
+								type="text"
+								name="name"
+								aria-label="name"
+								placeholder="Seu Nome"
+								class="input text-sm"
+								required
+							/>
+						</div>
 
-					<div class="grid gap-2">
-						<label for="child" class="text-xs">Nome da criança <span class="text-slate-400 dark:text-slate-300">• Child's name</span></label>
-						<input
-							type="text"
-							name="child"
-							aria-label="child"
-							placeholder="Nome da criança"
-							class="input text-sm"
-							required
-						/>
-					</div>
+						<div class="grid gap-2">
+							<label for="child" class="text-xs">Nome da criança <span class="text-slate-400 dark:text-slate-300">• Child's name</span></label>
+							<input
+								type="text"
+								name="child"
+								aria-label="child"
+								placeholder="Nome da criança"
+								class="input text-sm"
+								required
+							/>
+						</div>
 
-					<div class="grid gap-2">
-						<label for="grade" class="text-xs">Escolaridade <span class="text-slate-400 dark:text-slate-300">• Grade</span></label>				
-						
-						<select 
-							name="grade"
-							aria-label="grade"
-							class="input text-sm" >
-							<option value="Educação Infantil">Educação Infantil • Preschool</option>
-							<option value="Ensino Fundamental I">Ensino Fundamental I • Elementary</option>
-							<option value="Ensino Fundamental II">Ensino Fundamental II • Middle Years</option>
-							<option value="Ensino Médio">Ensino Médio • High School</option>
-						</select>
+						<div class="grid gap-2">
+							<label for="grade" class="text-xs">Escolaridade <span class="text-slate-400 dark:text-slate-300">• Grade</span></label>				
 							
-					</div>
+							<select 
+								name="grade"
+								aria-label="grade"
+								class="input text-sm" >
+								<option value="Educação Infantil">Educação Infantil • Preschool</option>
+								<option value="Ensino Fundamental I">Ensino Fundamental I • Elementary</option>
+								<option value="Ensino Fundamental II">Ensino Fundamental II • Middle Years</option>
+								<option value="Ensino Médio">Ensino Médio • High School</option>
+							</select>
+								
+						</div>
 
-					<div class="grid gap-2">
-						<label for="email" class="text-xs">Seu e-mail <span class="text-slate-400 dark:text-slate-300">• E-mail</span></label>
-						<input
-							type="email"
-							name="email"
-							aria-label="email"
-							placeholder="seunome@email.com.br"
-							class="input text-sm email"
-							required
-						/>
-					</div>
+						<div class="grid gap-2">
+							<label for="email" class="text-xs">Seu e-mail <span class="text-slate-400 dark:text-slate-300">• E-mail</span></label>
+							<input
+								type="email"
+								name="email"
+								aria-label="email"
+								placeholder="seunome@email.com.br"
+								class="input text-sm email"
+								required
+							/>
+						</div>
 
-					<div class="grid gap-2">
-						<label for="phone" class="text-xs">Seu telefone <span class="text-slate-400 dark:text-slate-300">• Phone</span></label>
-						<input
-							name="phone"
-							type="text"
-							class="input text-sm"
-							placeholder="+55 (11) 99876 5432"
-							aria-label="phone"
-							required
-						/>
-					</div>
+						<div class="grid gap-2">
+							<label for="phone" class="text-xs">Seu telefone <span class="text-slate-400 dark:text-slate-300">• Phone</span></label>
+							<input
+								name="phone"
+								type="text"
+								class="input text-sm"
+								placeholder="+55 (11) 99876 5432"
+								aria-label="phone"
+								required
+							/>
+						</div>
 
-					<div class="pt-3 md:pt-0 grid gap-2">
-						<button type="submit" on:click={() => (submitted = true)} class="mt-6 btn rounded-md font-semibold text-white bg-primary-400 dark:bg-primary-500"
-							>Enviar <span class="text-slate-100 font-normal ml-1"> • Send</span></button
-						>
-					</div>
-				</form>
+						<div class="pt-3 md:pt-0 grid gap-2">
+							<button type="submit" on:click={() => (submitted = true)} class="mt-6 btn rounded-md font-semibold text-white bg-primary-400 dark:bg-primary-500"
+								>Enviar <span class="text-slate-100 font-normal ml-1"> • Send</span></button
+							>
+						</div>
+					</form>
+				{/if}
 			{/if}
         </div>
     </div>
