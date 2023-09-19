@@ -6,7 +6,11 @@
 </script>
 
 <svelte:head>
-	<meta name="description" content="Maple Bear São Bernardo do Campo - Matrículas abertas!" />
+	<title>Maple Bear SBC - Concurso de Bolsas</title>
+	<meta
+		name="description"
+		content="Maple Bear São Bernardo do Campo - Concurso de Bolsas para o 9º e 10º anos!"
+	/>
 	<!-- Facebook Meta Tags -->
 	<meta property="og:image" content="/favicon.png" />
 	<!-- Twitter Meta Tags -->

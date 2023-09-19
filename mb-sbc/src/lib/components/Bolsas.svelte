@@ -54,17 +54,17 @@
 			<Thanks />
 		</div>
 	{:else}
-		<div>
+		<div class="">
 			<h2
 				class="text-gray-500 dark:text-surface-50 font-light text-3xl lg:text-4xl 2xl:text-6xl py-4 max-w-[75vw] md:max-w-full lg:max-w-[25ch] xl:max-w-full"
 			>
-				Concurso de Bolsas MapleBear SBC 2024!
+				Inscreva seus filhos para o Concurso de Bolsas Maple Bear SBC 2024!
 			</h2>
 			<p class="text-sm text-gray-600">Inscrições até 5 de outubro de 2023.</p>
-			<p class="text-sm text-secondary-400 font-semibold">Prova dia 7 de outubro de 2023</p>
+			<p class="text-sm text-secondary-400 font-semibold">Prova dia 7 de outubro de 2023.</p>
 		</div>
 
-		<div class="">
+		<div class="h-[36em] md:h-[20em] lg:h-full overflow-scroll scroll-m-12 px-2">
 			<div class="text-gray-500 grid">
 				{#if hasError == true}
 					<p class="text-center text-error-800 border border-error-800 rounded-sm p-2 mb-4">
@@ -111,8 +111,7 @@
 
 						<div class="grid gap-2">
 							<label for="child" class="text-xs"
-								>Nome do aluno <span class="text-slate-400 dark:text-slate-300"
-									>• Student's name</span
+								>Nome do aluno <span class="text-slate-400 dark:text-slate-300">• Child's name</span
 								></label
 							>
 							<input
