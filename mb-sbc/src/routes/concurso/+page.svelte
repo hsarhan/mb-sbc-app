@@ -1,7 +1,7 @@
 <script>
-	//import Bolsas from '$lib/components/Bolsas.svelte';
+	import Bolsas from '$lib/components/Bolsas.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import Form from '$lib/components/Form.svelte';
+	//import Form from '$lib/components/Form.svelte';
 	import HeroSlider from '$lib/components/HeroSlider.svelte';
 </script>
 
@@ -49,7 +49,7 @@
 	<div
 		class="border-x border-surface-400 lg:border-t-2 lg:border-r-1 lg:border-surface-500 dark:border-0 dark:bg-primary-700"
 	>
-		<Form />
+		<Bolsas />
 	</div>
 </div>
 
