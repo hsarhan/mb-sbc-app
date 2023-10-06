@@ -29,7 +29,7 @@
 		})(window, document, 'script', 'dataLayer', 'GTM-WS9QRR4');
 	</script>
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id={mID}">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-WS9QRR4">
 	</script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -39,7 +39,7 @@
 		}
 
 		gtag('js', new Date());
-		gtag('config', { mID });
+		gtag('config', 'GTM-WS9QRR4');
 	</script>
 </svelte:head>
 
